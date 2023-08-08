@@ -28,7 +28,7 @@ weatherSearch.addEventListener('keyup',(a)=>{
    weatherAPI(a.target.value)
 })
 
-async function weatherAPI(city = 'sanaa')
+async function weatherAPI(city = 'Riyadh')
 {
     var http = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=511ec218ac904fb2907183312230608&q=${city}&days=3`)
     if(http.ok && http.status == 200)
